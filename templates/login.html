@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+    <title>Login</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- esquerda -->
+    <div class="left">
+        <h2 class="montserrat">Conecte-se</h2>
+
+        <div class="form-container inter">
+            <form method="POST">
+
+                <div class="campo">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+
+                <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div class="forgot">
+                    <a href="{{ url_for('recuperar_senha') }}"><b>Esqueceu a senha?</b></a>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <div class="signup montserrat">
+                Não tem uma conta?
+                <a href="{{ url_for('cadastro') }}"><b>cadastre-se</b></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- direita -->
+    <div class="right montserrat">
+        <div class="text">
+            <h1><b>Bem vindo!</b></h1>
+            <p>Faça login para continuar</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
