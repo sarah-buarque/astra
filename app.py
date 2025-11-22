@@ -21,7 +21,6 @@ def login():
         usuario = request.form.get("usuario")
         senha = request.form.get("senha")
 
-        # Autenticação fictícia (troque por banco de dados)
         if usuario == "admin" and senha == "123":
             return "Login realizado com sucesso!"
 
@@ -35,11 +34,6 @@ def login():
 def recuperar_senha():
     return render_template("recuperarsenha.html")
 
-
-@app.route("/cadastro")
-def cadastro():
-    return "<h2>Página de cadastro</h2>"
-
 @app.route('/projetos')
 def projetos():
     return render_template('projetos.html')
@@ -47,6 +41,22 @@ def projetos():
 @app.route('/projeto/<nome>')
 def projeto(nome):
     return render_template('projeto_detalhe.html', nome=nome)
+
+@app.route('/cadastro', methods=['GET', 'POST'])
+def cadastro():
+    if request.method == 'POST':
+        nome = request.form['nome']
+        usuario = request.form.get('usuario')
+        nascimento = request.form['nascimento']
+        email = request.form['email']
+        telefone = request.form['telefone']
+        senha = request.form['senha']
+        return redirect(url_for('sucesso'))
+    return render_template('cadastro.html')
+
+@app.route('/sucesso')
+def sucesso():
+    return "<h2>Cadastro realizado com sucesso!</h2>"
 
 if __name__ == "__main__":
     app.run(debug=True)

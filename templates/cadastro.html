@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro.css') }}">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Cadastre-se</h2>
+        <form method="POST">
+            <label>Nome Completo:</label>
+            <input type="text" name="nome" required placeholder="Digite seu nome completo">
+            <label>Data de Nascimento:</label>
+            <input type="text" name="usuario" placeholder="Ex: Usuário_3">
+            <label>Data de Nascimento:</label>
+            <input type="text" name="nascimento" placeholder="DD/MM/AA" required>
+            <label>Email:</label>
+            <input type="email" name="email" required placeholder="Ex: Digite@seuemail.com">
+            <label>Telefone:</label>
+            <input type="text" name="telefone" placeholder="Ex: +55 (99) 99999-9999">
+            <label>Senha:</label>
+            <input type="password" name="senha" required minlength="8" placeholder="Digite sua senha">
+            <span class="senha-info">No mínimo 8 caracteres</span>
+            <button type="submit">Finalizar cadastro</button>
+        </form>
+    </div>
+</body>
+</html>
