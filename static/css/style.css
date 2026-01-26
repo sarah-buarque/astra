@@ -1,40 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    color: white
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    font-family: "Inter", sans-serif;
-}
-
-.navbar nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-.navbar img{
-  width: 120px;
-}
-
-.nav-link {
-    border: 1px solid transparent;
-    padding: 6px 18px;
-    border-radius: 6px;
-}
-
-.nav-link:hover {
-    border-color: white;
+.container {
+    background-image: url("/static/img/ceu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .principal {
@@ -75,16 +42,6 @@ body {
 
 .card p {
     font-family: "Inter", sans-serif;
-}
-
-.yellow {
-    background: #D9AE4B;
-    color: white;
-    transition: box-shadow 0.1s ease; 
-}
-
-.yellow:hover {
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
 }
 
 .purple {
@@ -164,11 +121,11 @@ body {
   font-weight: bold;
 }
 
-.ver-mais {
-  display: block;
-  text-align: center;
-  margin-top: 30px;
-  font-weight: bold;
-  color: #D9AE4B;
-  text-decoration: none;
+section.lavanda{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
