@@ -1,13 +1,21 @@
 h1, h2{
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-p{
+p, h3{
     font-family: 'Inter', sans-serif;
 }
 
 h1{
     font-size: 80px;   
+}
+
+h2{
+    margin-bottom: 25px;
+}
+
+h3{
+    margin-bottom: 25px;
 }
 
 .initial {
@@ -23,4 +31,36 @@ h1{
     padding: 0px 100px;
     background-color: white;
     color: #47487D;
+    gap: 50px;
+}
+
+section.width{
+    max-width: 600px;
+}
+
+.first h2{
+    margin-top: 40px;
+    width: 878px;
+}
+
+section.fourth p{
+    margin-bottom: 50px;
+}
+
+section.second, section.fourth{
+    display: flex;
+    gap: 300px;
+}
+
+.agrupamento{
+    display: flex;
+    flex-direction: column;
+}
+
+div.agrupamento.width{
+    width: 600px;
+}
+
+img.height{
+    height: 275px;
 }
