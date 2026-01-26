@@ -1,1 +1,26 @@
+h1, h2{
+  font-family: 'Montserrat', sans-serif;
+}
 
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-size: 80px;   
+}
+
+.initial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+    background-color: white;
+    color: #47487D;
+}

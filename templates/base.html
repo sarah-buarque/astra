@@ -6,7 +6,10 @@
     <title>ASTRA</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
+    {% block styles %}
     <link rel="stylesheet" href="{{url_for('static', filename='css/sobre.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    {% endblock %}
 </head>
 <body>
 
