@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    background-color: #201840;
-}
-
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -94,3 +90,8 @@ section.fourth p {
         font-size: 56px;
     }
 }
+
+.container, header.navbar {
+    background-color: #201840;
+}
+
