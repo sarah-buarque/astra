@@ -1,57 +1,68 @@
-<div class="container">
-  {% extends "base.html" %}
-
+{% extends "base.html" %}
 
 {% block styles %}
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{url_for('static', filename='css/sobre.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sobre.css') }}">
 {% endblock %}
 
 {% block content %}
 
-<main class="about">
+<div class="container">
+  <main class="about">
 
-  <section class="initial">
-    <h1>ASTRA</h1>
-    <h2>Ambiente de Saberes e Transmissão de Resultados Acadêmicos</h2>
-  </section>
-  
+    <section class="initial">
+      <h1>ASTRA</h1>
+      <h2>Ambiente de Saberes e Transmissão de Resultados Acadêmicos</h2>
+    </section>
+
+  </main>
 </div>
 
-  <div class="content">
-    <section class="first width">
-      <h2>Sobre o ASTRA</h2>
-      <p>O Astra é um sistema web desenvolvido com o objetivo de transformar a forma como os projetos acadêmicos do IFRN são divulgados e acessados pela comunidade estudantil. A ideia do projeto surgiu a partir da percepção de que muitos projetos relevantes acabam tendo pouco alcance, principalmente porque as informações ficam dispersas ou não chegam de forma clara aos estudantes.
-Pensando nisso, o Astra foi criado como uma plataforma centralizada, onde projetos ativos podem ser facilmente divulgados, organizados e acessados. O sistema busca aproximar alunos, projetos e ações desenvolvidas no campus, promovendo maior visibilidade, transparência e participação.
-Além de funcionar como um espaço de divulgação, o Astra também incentiva o engajamento estudantil, permitindo que os alunos acompanhem atividades, eventos e oportunidades de participação de forma prática e acessível. Dessa maneira, o sistema contribui para fortalecer a integração acadêmica e valorizar as iniciativas desenvolvidas dentro do IFRN.</p>
-      </section>
+<div class="content">
 
-    <section class="second">
-      <div class="agrupamento width">
-        <h2>Quem somos?</h2>
-      <p>Somos estudantes do curso de Informática para Internet do Instituto Federal do Rio Grande do Norte (IFRN) e desenvolvemos o Astra como parte do Projeto Integrador, uma atividade acadêmica que tem como objetivo unir os conhecimentos adquiridos ao longo do curso em uma solução prática e funcional.
-Durante o desenvolvimento do projeto, atuamos em todas as etapas do processo, desde a identificação do problema até o planejamento, desenvolvimento e implementação do sistema. Trabalhamos de forma colaborativa, aplicando conceitos de desenvolvimento web, banco de dados, organização da informação, usabilidade e experiência do usuário.
-O Astra representa não apenas um projeto acadêmico, mas também o resultado do nosso aprendizado, esforço em equipe e compromisso em criar uma ferramenta que possa gerar impacto positivo dentro da comunidade escolar.</p>   
-      </div>
-      <img src="{{url_for('static', filename='img/foto1.svg')}}" alt="FOTO" class="height">    
-    </section>
+  <section class="first width">
+    <h2>Sobre o ASTRA</h2>
+    <p>
+      O Astra é um sistema web desenvolvido com o objetivo de transformar a forma como os projetos acadêmicos do IFRN são divulgados e acessados pela comunidade estudantil. A ideia do projeto surgiu a partir da percepção de que muitos projetos relevantes acabam tendo pouco alcance, principalmente porque as informações ficam dispersas ou não chegam de forma clara aos estudantes.
+      Pensando nisso, o Astra foi criado como uma plataforma centralizada, onde projetos ativos podem ser facilmente divulgados, organizados e acessados. O sistema busca aproximar alunos, projetos e ações desenvolvidas no campus, promovendo maior visibilidade, transparência e participação.
+      Além de funcionar como um espaço de divulgação, o Astra também incentiva o engajamento estudantil, permitindo que os alunos acompanhem atividades, eventos e oportunidades de participação de forma prática e acessível. Dessa maneira, o sistema contribui para fortalecer a integração acadêmica e valorizar as iniciativas desenvolvidas dentro do IFRN.
+    </p>
+  </section>
 
-    <section class="third width">
-      <h2>Sobre o sistema</h2>
-      <p>O sistema web desenvolvido permite o cadastro, a organização e a divulgação de projetos acadêmicos de forma estruturada e intuitiva. Os responsáveis pelos projetos podem inserir informações detalhadas, como descrição, objetivos, atividades, eventos e formas de participação.
-Para os estudantes, a plataforma oferece a possibilidade de visualizar os projetos disponíveis, conhecer suas propostas, se inscrever nas iniciativas de interesse e acompanhar atualizações ao longo do tempo. Dessa forma, o sistema atua como um canal direto entre projetos e alunos.
-O Astra foi desenvolvido com foco em simplicidade, acessibilidade e facilidade de uso, garantindo que diferentes perfis de usuários consigam navegar pelo sistema sem dificuldades, tornando a experiência mais eficiente e agradável.</p>
-    </section>
+  <section class="second">
+    <div class="agrupamento width">
+      <h2>Quem somos?</h2>
+      <p>
+        Somos estudantes do curso de Informática para Internet do Instituto Federal do Rio Grande do Norte (IFRN) e desenvolvemos o Astra como parte do Projeto Integrador, uma atividade acadêmica que tem como objetivo unir os conhecimentos adquiridos ao longo do curso em uma solução prática e funcional.
+        Durante o desenvolvimento do projeto, atuamos em todas as etapas do processo, desde a identificação do problema até o planejamento, desenvolvimento e implementação do sistema. Trabalhamos de forma colaborativa, aplicando conceitos de desenvolvimento web, banco de dados, organização da informação, usabilidade e experiência do usuário.
+        O Astra representa não apenas um projeto acadêmico, mas também o resultado do nosso aprendizado, esforço em equipe e compromisso em criar uma ferramenta que possa gerar impacto positivo dentro da comunidade escolar.
+      </p>
+    </div>
 
-    <section class="fourth width">
-      <div class="agrupamento">
-        <h3>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte</h3>
-      <p>O Instituto Federal do Rio Grande do Norte (IFRN) é uma instituição pública de ensino que se destaca pela qualidade na formação técnica, científica e tecnológica, promovendo ensino, pesquisa e extensão de forma integrada.
-O desenvolvimento do Astra está diretamente ligado ao ambiente acadêmico do IFRN, surgindo como uma iniciativa que busca fortalecer a comunicação interna e valorizar os projetos realizados dentro da instituição. Ao contribuir para a divulgação dessas ações, o sistema reforça o papel do IFRN como um espaço de inovação, aprendizado e desenvolvimento social</p>
-      </div>
-      <img src="{{url_for('static', filename='img/foto2.svg')}}" alt="FOTO" class="height">    
-    </section>
+    <img src="{{ url_for('static', filename='img/foto1.svg') }}" alt="FOTO" class="height">
+  </section>
 
+  <section class="third width">
+    <h2>Sobre o sistema</h2>
+    <p>
+      O sistema web desenvolvido permite o cadastro, a organização e a divulgação de projetos acadêmicos de forma estruturada e intuitiva. Os responsáveis pelos projetos podem inserir informações detalhadas, como descrição, objetivos, atividades, eventos e formas de participação.
+      Para os estudantes, a plataforma oferece a possibilidade de visualizar os projetos disponíveis, conhecer suas propostas, se inscrever nas iniciativas de interesse e acompanhar atualizações ao longo do tempo. Dessa forma, o sistema atua como um canal direto entre projetos e alunos.
+      O Astra foi desenvolvido com foco em simplicidade, acessibilidade e facilidade de uso, garantindo que diferentes perfis de usuários consigam navegar pelo sistema sem dificuldades, tornando a experiência mais eficiente e agradável.
+    </p>
+  </section>
 
-  </div>
+  <section class="fourth width">
+    <div class="agrupamento">
+      <h3>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte</h3>
+      <p>
+        O Instituto Federal do Rio Grande do Norte (IFRN) é uma instituição pública de ensino que se destaca pela qualidade na formação técnica, científica e tecnológica, promovendo ensino, pesquisa e extensão de forma integrada.
+        O desenvolvimento do Astra está diretamente ligado ao ambiente acadêmico do IFRN, surgindo como uma iniciativa que busca fortalecer a comunicação interna e valorizar os projetos realizados dentro da instituição. Ao contribuir para a divulgação dessas ações, o sistema reforça o papel do IFRN como um espaço de inovação, aprendizado e desenvolvimento social.
+      </p>
+    </div>
+
+    <img src="{{ url_for('static', filename='img/foto2.svg') }}" alt="FOTO" class="height">
+  </section>
+
+</div>
+
 {% endblock %}
