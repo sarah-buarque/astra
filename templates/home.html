@@ -1,6 +1,4 @@
-<div class="container">
-  {% extends "base.html" %}
-
+{% extends "base.html" %}
 
 {% block styles %}
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -9,17 +7,17 @@
 
 {% block content %}
 
+<div class="container">
   <section class="principal">
     <h1>ASTRA</h1>
     <p>Ambiente de Saberes e Transmissão de Resultados Acadêmicos</p>
   </section>
 
   <section class="cards">
-
     <div class="card purple">
       <img src="{{url_for('static', filename='img/icon.svg')}}">
-        <h3>Transparência</h3>
-          <p>Atuamos com clareza e ética em todas as ações de divulgação.</p>
+      <h3>Transparência</h3>
+      <p>Atuamos com clareza e ética em todas as ações de divulgação.</p>
     </div>
 
     <div class="card purple">
@@ -34,43 +32,45 @@
       <p>Acreditamos no poder da visibilidade para gerar evolução e oportunidades.</p>
     </div>
   </section>
-
-</section>
 </div>
-
 
 <section class="bg-light">
   <section class="projetos">
-  <h2 class="center">Conheça os projetos</h2>
-  <div class="carousel-container">
-    <div class="carousel">
-      <div class="projeto-card">
-        <img src="{{url_for('static', filename='img/Nuarte.svg')}}" alt="Nuarte">
-        <h3>Nuarte</h3>
-        <p>Estou trabalhando em um projeto de arte com reciclagem! Vai ser uma instalação cheia de esculturas feitas com materiais.</p>
-        <a href="{{url_for('projeto', nome='nuarte')}}">Saiba mais</a>
-      </div>
-      <div class="projeto-card">
-        <img src="{{url_for('static', filename='img/SemeandoCronicas.svg')}}" alt="Semeando Crônicas">
-        <h3>Semeando Crônicas</h3>
-        <p>Estou trabalhando em um projeto de arte com reciclagem! Vai ser uma instalação cheia de esculturas feitas com materiais.</p>
-        <a href="{{url_for('projeto', nome='semeando')}}">Saiba mais</a>
-      </div>
-      <div class="projeto-card">
-        <img src="{{url_for('static', filename='img/ADA.svg')}}" alt="ADA">
-        <h3>ADA</h3>
-        <p>Estou trabalhando em um projeto de arte com reciclagem! Vai ser uma instalação cheia de esculturas feitas com materiais.</p>
-        <a href="{{url_for('projeto', nome='ada')}}">Saiba mais</a>
+    <h2 class="center">Conheça os projetos</h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="projeto-card">
+          <img src="{{url_for('static', filename='img/Nuarte.svg')}}" alt="Nuarte">
+          <div class="overlay">
+            <h3>Nuarte</h3>
+            <p>Estou trabalhando em um projeto de arte com reciclagem! Vai ser uma instalação cheia de esculturas feitas com materiais.</p>
+            <a href="#">Saiba mais</a>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <img src="{{url_for('static', filename='img/SemeandoCronicas.svg')}}" alt="Semeando Crônicas">
+          <div class="overlay">
+            <h3>Semeando Crônicas</h3>
+            <p>Estou trabalhando em um projeto de arte com reciclagem! Vai ser uma instalação cheia de esculturas feitas com materiais.</p>
+            <a href="#">Saiba mais</a>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <img src="{{url_for('static', filename='img/ADA.svg')}}" alt="ADA">
+          <div class="overlay">
+            <h3>ADA</h3>
+            <p>Estou trabalhando em um projeto de arte com reciclagem! Vai ser uma instalação cheia de esculturas feitas com materiais.</p>
+            <a href="#">Saiba mais</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
- </section>
+  </section>
 </section>
 
 <section class="lavanda">
   <h1>Conheça mais sobre o ASTRA</h1>
   <p>Saiba mais</p>
 </section>
-
 
 {% endblock %}
