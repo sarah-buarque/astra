@@ -144,7 +144,7 @@ header.navbar {
   transform: scale(1.05);
 }
 
-.projeto-card a {
+.projeto-card a, section.lavanda a {
   margin-top: 10px;
   align-self: flex-start;
   background: #D9AE4B;
@@ -159,8 +159,85 @@ header.navbar {
 section.lavanda {
   background-image: url("/static/img/lavanda.svg");
   background-size: cover;
-  padding: 120px 20px;
+  padding: 300px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+section.lavanda a {
+display: flex;
+align-self: center;
+}
+
+.qas {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* LADO ESQUERDO */
+.esquerda {
+  flex: 1;
+}
+
+.esquerda h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.esquerda p {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.esquerda a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #5b5bf0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 24px;
+}
+
+.direita {
+  flex: 1;
+}
+
+.direita details {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 16px 0;
+}
+
+.direita summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.direita summary::-webkit-details-marker {
+  display: none;
+}
+
+.direita .icon {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.direita details[open] .icon {
+  transform: rotate(45deg);
+}
+
+.direita details p {
+  margin-top: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
