@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+</head>
+<body>
+
+    <div class="page">
+  <aside class="sidebar">
+    <h1>ASTRA</h1>
+    <nav>
+      <a href="#" class="active"><span class="icon">🏠</span>Início</a>
+      <a href="#"><span class="icon">📊</span>Projetos</a>
+      <a href="#"><span class="icon">💬</span>Central de serviços</a>
+      <a href="#"><span class="icon">✉️</span>Mensagens</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <div class="profile-header">
+      <img src="https://via.placeholder.com/80" alt="Avatar" />
+      <div class="info">
+        <p>Matrícula: 278490556</p>
+        <p>Email: emilly.@escolar.ifrn.edu.br</p>
+        <p>Currículo Lattes: emilly.@escolar.ifrn.edu.br</p>
+        <div class="edit">Editar</div>
+      </div>
+    </div>
+
+    <form>
+      <label for="nome-social">Nome Social:</label>
+      <input type="text" id="nome-social" name="nome-social" />
+
+      <label for="celular">Número de celular:</label>
+      <input type="tel" id="celular" name="celular" placeholder="Ex: +55 (99) 99999-9999" />
+
+      <div class="small-inputs">
+        <div>
+          <label for="nascimento">Data de nascimento:</label>
+          <input type="date" id="nascimento" name="nascimento" />
+        </div>
+        <div>
+          <label for="genero">Gênero:</label>
+          <select id="genero" name="genero">
+            <option>Feminino</option>
+            <option>Masculino</option>
+            <option>Outro</option>
+            <option>Prefiro não dizer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="save">Salvar alterações</button>
+        <button type="button" class="delete">Excluir conta</button>
+      </div>
+    </form>
+  </main>
+</div>
+
+<footer>
+    <div class="column-1">
+        <h2>Fale Conosco</h2>
+
+        <p>
+                Você tem dúvidas ou sugestões? Não fique na dúvida! Nossas redes sociais estão sempre abertas para você.
+                Entre em contato, compartilhe suas ideias e faça parte dessa comunidade vibrante. Juntos, podemos
+                construir um espaço melhor, cheio de conhecimento e inovação.
+        </p>
+
+        <div class="icons">
+            <img src="{{ url_for('static', filename='img/Instagram Circle.svg') }}" alt="Instagram">
+            <img src="{{ url_for('static', filename='img/Letter.svg') }}" alt="E-mail">
+            <img src="{{ url_for('static', filename='img/WhatsApp.svg') }}" alt="WhatsApp">
+        </div>
+    </div>
+
+        <div class="column-2">
+            <h2>Créditos:</h2>
+            <p>Sarah Beatriz Buarque da Silva</p>
+            <p>Vitória Emilly de Brito Nogueira</p>
+            <p>Yasmin da Silva Vitoriano Medeiros</p>
+            <p>Miguel Fernandes Kolodiuk</p>
+        </div>
+
+        <div class="column-3">
+            <img src="{{ url_for('static', filename='img/IFRN.svg') }}"
+                 alt="Instituto Federal do Rio Grande do Norte"
+                 class="logo">
+
+            <img src="{{ url_for('static', filename='img/LOGO.svg') }}"
+                 alt="ASTRA"
+                 class="logo">
+        </div>
+</footer>
+    
+</body>
+</html>

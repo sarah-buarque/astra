@@ -59,6 +59,10 @@ def cadastro():
 def sucesso():
     return "<h2>Cadastro realizado com sucesso!</h2>"
 
+@app.route('/editarperfil')
+def editar():
+    return render_template("editarperfil.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
 

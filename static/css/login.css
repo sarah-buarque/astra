@@ -92,7 +92,7 @@ button {
 
 .right {
     width: 50%;
-    background-image: url('../img/ceu.svg');
+    background-image: url("/static/img/ceuazul.svg");
     background-size: cover;
     background-position: center;
     display: flex;              

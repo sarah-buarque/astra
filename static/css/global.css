@@ -20,6 +20,19 @@ main {
     width: 100%;
 }
 
+header.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+}
+
+main {
+  padding: 0;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;

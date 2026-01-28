@@ -6,33 +6,36 @@
 {% endblock %}
 
 {% block content %}
+<section class="hero">
+  <div class="container">
+    <section class="principal">
+      <h1>ASTRA</h1>
+      <p>Ambiente de Saberes e Transmissão de Resultados Acadêmicos</p>
+    </section>
 
-<div class="container">
-  <section class="principal">
-    <h1>ASTRA</h1>
-    <p>Ambiente de Saberes e Transmissão de Resultados Acadêmicos</p>
-  </section>
+    <section class="cards">
+      <div class="card purple">
+        <img src="{{url_for('static', filename='img/icon.svg')}}">
+        <h3>Transparência</h3>
+        <p>Atuamos com clareza e ética em todas as ações de divulgação.</p>
+      </div>
 
-  <section class="cards">
-    <div class="card purple">
-      <img src="{{url_for('static', filename='img/icon.svg')}}">
-      <h3>Transparência</h3>
-      <p>Atuamos com clareza e ética em todas as ações de divulgação.</p>
-    </div>
+      <div class="card purple">
+        <img src="{{url_for('static', filename='img/icon2.svg')}}">
+        <h3>Colaboração</h3>
+        <p>Promover o trabalho conjunto entre projetos, instituições e pessoas.</p>
+      </div>
 
-    <div class="card purple">
-      <img src="{{url_for('static', filename='img/icon2.svg')}}">
-      <h3>Colaboração</h3>
-      <p>Promover o trabalho conjunto entre projetos, instituições e pessoas.</p>
-    </div>
+      <div class="card purple">
+        <img src="{{url_for('static', filename='img/icon2.svg')}}">
+        <h3>Transformação</h3>
+        <p>Acreditamos no poder da visibilidade para gerar evolução e oportunidades.</p>
+      </div>
+    </section>
+  </div>
 
-    <div class="card purple">
-      <img src="{{url_for('static', filename='img/icon2.svg')}}">
-      <h3>Transformação</h3>
-      <p>Acreditamos no poder da visibilidade para gerar evolução e oportunidades.</p>
-    </div>
-  </section>
-</div>
+</section>
+
 
 <section class="bg-light">
   <section class="projetos">
