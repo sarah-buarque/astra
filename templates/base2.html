@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/global2.css') }}">
-</head>
-<body>
-  
-  <header class="header">
-    <div class="header-content">
-      <div class="search-box">
-        <input type="text"/>
-        <button class="search-btn">
-          <img src="{{url_for('static', filename='img/Search.svg')}}" class="icon">
-        </button>
-      </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <button class="action-btn">
-        <img src="{{url_for('static', filename='img/Logout.svg')}}" class="icon">
+  <title>ASTRA</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/global2.css') }}">
+
+  {% block styles %}{% endblock %}
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-content">
+    <div class="search-box">
+      <input type="text" placeholder="Pesquisar..." />
+      <button class="search-btn">
+        <img src="{{url_for('static', filename='img/Search.svg')}}" class="icon">
       </button>
     </div>
-  </header>
 
+    <button class="action-btn">
+      <img src="{{url_for('static', filename='img/Logout.svg')}}" class="icon">
+    </button>
+  </div>
+</header>
 
-    <div class="page">
+<div class="dashboard-layout">
+
   <aside class="sidebar">
     <h1>ASTRA</h1>
+
     <nav>
       <a href="#"><img src="{{url_for('static', filename='img/home.svg')}}" class="icon">Início</a>
       <a href="#"><img src="{{url_for('static', filename='img/chart.svg')}}" class="icon">Projetos</a>
@@ -40,41 +46,37 @@
     {% block content %}{% endblock %}
   </main>
 
-<footer>
-    <div class="column-1">
-        <h2>Fale Conosco</h2>
+</div>
 
-        <p>
+<footer>
+  <div class="column-1">
+    <h2>Fale Conosco</h2>
+      <p>
                 Você tem dúvidas ou sugestões? Não fique na dúvida! Nossas redes sociais estão sempre abertas para você.
                 Entre em contato, compartilhe suas ideias e faça parte dessa comunidade vibrante. Juntos, podemos
                 construir um espaço melhor, cheio de conhecimento e inovação.
-        </p>
+      </p>
 
-        <div class="icons">
-            <img src="{{ url_for('static', filename='img/Instagram Circle.svg') }}" alt="Instagram">
-            <img src="{{ url_for('static', filename='img/Letter.svg') }}" alt="E-mail">
-            <img src="{{ url_for('static', filename='img/WhatsApp.svg') }}" alt="WhatsApp">
-        </div>
+    <div class="icons">
+      <img src="{{ url_for('static', filename='img/Instagram Circle.svg') }}" alt="Instagram">
+      <img src="{{ url_for('static', filename='img/Letter.svg') }}" alt="E-mail">
+      <img src="{{ url_for('static', filename='img/WhatsApp.svg') }}" alt="WhatsApp">
     </div>
+  </div>
 
-        <div class="column-2">
-            <h2>Créditos:</h2>
-            <p>Sarah Beatriz Buarque da Silva</p>
-            <p>Vitória Emilly de Brito Nogueira</p>
-            <p>Yasmin da Silva Vitoriano Medeiros</p>
-            <p>Miguel Fernandes Kolodiuk</p>
-        </div>
+  <div class="column-2">
+    <h2>Créditos:</h2>
+    <p>Sarah Beatriz Buarque da Silva</p>
+    <p>Vitória Emilly de Brito Nogueira</p>
+    <p>Yasmin da Silva Vitoriano Medeiros</p>
+    <p>Miguel Fernandes Kolodiuk</p>
+  </div>
 
-        <div class="column-3">
-            <img src="{{ url_for('static', filename='img/IFRN.svg') }}"
-                 alt="Instituto Federal do Rio Grande do Norte"
-                 class="logo">
-
-            <img src="{{ url_for('static', filename='img/LOGO.svg') }}"
-                 alt="ASTRA"
-                 class="logo">
-        </div>
+  <div class="column-3">
+    <img src="{{ url_for('static', filename='img/IFRN.svg') }}" alt="Instituto Federal do Rio Grande do Norte" class="logo">
+    <img src="{{ url_for('static', filename='img/LOGO.svg') }}" alt="ASTRA" class="logo">
+  </div>
 </footer>
-    
+
 </body>
 </html>
