@@ -12,14 +12,14 @@
   <header class="header">
     <div class="header-content">
       <div class="search-box">
-        <input type="text" placeholder="Pesquisar..." />
+        <input type="text"/>
         <button class="search-btn">
-          🔍
+          <img src="{{url_for('static', filename='img/Search.svg')}}" class="icon">
         </button>
       </div>
 
       <button class="action-btn">
-        ⎋
+        <img src="{{url_for('static', filename='img/Logout.svg')}}" class="icon">
       </button>
     </div>
   </header>
