@@ -8,21 +8,33 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/global2.css') }}">
 </head>
 <body>
+  
+  <header class="header">
+    <div class="header-content">
+      <div class="search-box">
+        <input type="text" placeholder="Pesquisar..." />
+        <button class="search-btn">
+          🔍
+        </button>
+      </div>
+
+      <button class="action-btn">
+        ⎋
+      </button>
+    </div>
+  </header>
+
 
     <div class="page">
   <aside class="sidebar">
     <h1>ASTRA</h1>
     <nav>
-      <a href="#" class="active"><span class="icon">🏠</span>Início</a>
-      <a href="#"><span class="icon">📊</span>Projetos</a>
-      <a href="#"><span class="icon">💬</span>Central de serviços</a>
-      <a href="#"><span class="icon">✉️</span>Mensagens</a>
+      <a href="#"><img src="{{url_for('static', filename='img/home.svg')}}" class="icon">Início</a>
+      <a href="#"><img src="{{url_for('static', filename='img/chart.svg')}}" class="icon">Projetos</a>
+      <a href="#"><img src="{{url_for('static', filename='img/nuvem.svg')}}" class="icon">Central de serviços</a>
+      <a href="#"><img src="{{url_for('static', filename='img/envelope.svg')}}" class="icon">Mensagens</a>
     </nav>
   </aside>
-
-  <header>
-    
-  </header>
 
   <main class="content">
     {% block content %}{% endblock %}
