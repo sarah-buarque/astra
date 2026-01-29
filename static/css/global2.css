@@ -12,11 +12,11 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: 50%;
   height: 64px;
-  background-color: #f4f5ff; /* fundo claro */
+  background-color: #f4f5ff;
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .header-content {
