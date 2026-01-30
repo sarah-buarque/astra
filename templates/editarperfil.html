@@ -9,7 +9,7 @@
 
   <div class="profile-header">
     <div class="avatar">
-      <img src="{{ url_for('static', filename='img/user-placeholder.png') }}">
+      <img src="{{ url_for('static', filename='img/user.svg') }}">
       <span class="edit-text">Editar</span>
     </div>
 
@@ -43,10 +43,9 @@
     </div>
 
     <div class="buttons">
-      <button class="btn-save">Salvar alterações</button>
-      <button class="btn-delete">Excluir conta</button>
+      <button type="submit" class="btn-save">Salvar alterações</button>
+      <button type="button" class="btn-delete">Excluir conta</button>
     </div>
-
   </form>
 
 </div>
