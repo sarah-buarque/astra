@@ -63,6 +63,14 @@ def sucesso():
 def editar():
     return render_template("editarperfil.html")
 
+@app.route('/editarorientador')
+def editarorientador():
+    return render_template("editarorientador.html")
+
+@app.route('/areaaluno')
+def areaaluno():
+    return render_template("areaaluno.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
 

@@ -1,0 +1,47 @@
+header.header {
+    background: white;
+}
+
+.content{
+    background: #F0F1FF;
+}
+
+.box-1{
+    display: flex;
+    gap: 80px;
+}
+
+.profile{
+    background: white;
+    color: black;
+    display: flex;
+    gap: 80px;
+    padding: 30px 20px;
+    justify-content: center;
+    border-radius: 20px 20px;
+    max-width: 1200px;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link{
+    display: flex;
+    align-self: self-end;
+    color: #895FBF;
+}
+
+.notificacoes{
+    background: white;
+    color: black;
+    display: flex;
+    border-radius: 20px 20px;
+    padding: 80px;
+}
+
+img.listras{
+    width: 20px;
+}

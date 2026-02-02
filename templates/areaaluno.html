@@ -1,0 +1,48 @@
+{% extends "base2.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/area.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="center-cont">
+
+  <div class="box-1">
+    <div class="profile">
+      <div class="avatar">
+        <img src="{{ url_for('static', filename='img/user.svg') }}">
+      </div>
+
+      <div class="informacoes">
+        <p>Nome: Yasmin Vitoriano</p>
+        <p>Matrícula: 20231041110030</p>
+        <p>Email: yasmin@escolar.ifrn.edu.br</p>
+        <p>Currículo lattes: </p>
+      </div>  
+  
+      <a href="#" class="link">Editar Perfil</a>
+
+    </div>
+
+    <div class="notificacoes">
+      <div class="top">
+        <h3>Minhas pendências</h3>
+        <img src="{{ url_for('static', filename='img/Menu.svg') }}" class="listras">
+      </div>
+
+      <div class="mensagens">
+        <p><b>Mensagens</b>não lidas</p>
+        <p><b>Avaliação</b>aguardando avaliação</p>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+    
+{% endblock %}
