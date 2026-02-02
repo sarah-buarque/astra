@@ -6,9 +6,14 @@ header.header {
     background: #F0F1FF;
 }
 
+.center-cont{
+    display: flex;
+    flex-direction: column;
+}
+
 .box-1{
     display: flex;
-    gap: 80px;
+    justify-content: space-between;
 }
 
 .profile{
@@ -38,10 +43,68 @@ header.header {
     background: white;
     color: black;
     display: flex;
+    flex-direction: column;
     border-radius: 20px 20px;
-    padding: 80px;
+    padding: 40px;
+    gap: 50px;
+}
+
+.top{
+    display: flex;
+    gap: 80px;
 }
 
 img.listras{
     width: 20px;
+}
+
+.mensagens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mensagem-1, 
+.mensagem-2 {
+    background-color: #F9CE72;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.numero{
+    background: #ED7F7F;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.projetos{
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 30px 20px;
+    justify-content: center;
+    border-radius: 20px 20px;
+    max-width: 1200px;
+}
+
+.projeto-1 {
+    display: flex;
+    background-color: #D1CCE5;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.projeto-1 img,
+.projeto-2 img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.projeto-2 {
+    background-color: #F7EDF8;
+    padding: 20px;
+    border-radius: 20px;
 }
