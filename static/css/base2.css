@@ -25,6 +25,17 @@ body{
   gap: 16px;
 }
 
+.search-box{
+  display: flex;
+}
+
+.search-box a{
+  background: #8A7EBE;
+  border-radius: 20px;
+  align-self: center;
+  padding: 5px;
+}
+
 .dashboard-layout {
   display: flex;
   min-height: 100vh;
@@ -85,7 +96,7 @@ body{
   background: white;
 }
 
-input{
+.search-input{
   background: #EDE8E8;
   padding: 8px;
   border: none;
@@ -104,4 +115,8 @@ input{
   border: none;
   border-radius: 20px;
   padding: 20px;
+}
+
+img.icon2{
+  width: 40px;
 }

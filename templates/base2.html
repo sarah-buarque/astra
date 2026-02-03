@@ -6,8 +6,8 @@
 
   <title>ASTRA</title>
   
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/global2.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base2.css') }}">
 
   {% block styles %}{% endblock %}
 </head>
@@ -17,14 +17,12 @@
 <header class="header">
   <div class="header-content">
     <div class="search-box">
-      <input type="text" placeholder="Pesquisar..." />
-      <button class="search-btn">
-        <img src="{{url_for('static', filename='img/Search.svg')}}" class="icon">
-      </button>
+      <input class="search-input" type="text" placeholder="Pesquisar..." />
+      <a href="#"><img src="{{url_for('static', filename='img/Search.svg')}}" class="icon"></a>
     </div>
 
     <button class="action-btn">
-      <img src="{{url_for('static', filename='img/Logout.svg')}}" class="icon">
+      <a href="/"><img src="{{url_for('static', filename='img/Logout.png')}}" class="icon2"></a>
     </button>
   </div>
 </header>
@@ -35,8 +33,8 @@
     <h1>ASTRA</h1>
 
     <nav>
-      <a href="#"><img src="{{url_for('static', filename='img/home.svg')}}" class="icon">Início</a>
-      <a href="#"><img src="{{url_for('static', filename='img/chart.svg')}}" class="icon">Projetos</a>
+      <a href="/areaaluno"><img src="{{url_for('static', filename='img/home.svg')}}" class="icon">Início</a>
+      <a href="/visualizarprojetos"><img src="{{url_for('static', filename='img/chart.svg')}}" class="icon">Projetos</a>
       <a href="#"><img src="{{url_for('static', filename='img/nuvem.svg')}}" class="icon">Central de serviços</a>
       <a href="#"><img src="{{url_for('static', filename='img/envelope.svg')}}" class="icon">Mensagens</a>
     </nav>

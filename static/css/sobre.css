@@ -27,13 +27,13 @@ h2, h3 {
     padding: 80px 20px;
     text-align: center;
     gap: 50px;
+    color: white;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding: 80px 20px;
     background-color: white;
     color: #47487D;
 }

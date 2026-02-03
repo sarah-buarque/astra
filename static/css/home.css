@@ -4,6 +4,7 @@
   background-position: center top;
   padding-top: 180px;
   padding-bottom: 120px;
+  color: white;
 }
 
 .principal {
@@ -78,28 +79,7 @@
   margin-bottom: 80px;
 }
 
-.carousel-container {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 15px;
-  scrollbar-width: thin;
-  scrollbar-color: #D9AE4B transparent;
-}
-
-.carousel-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.carousel-container::-webkit-scrollbar-thumb {
-  background-color: #D9AE4B;
-  border-radius: 20px;
-}
-
-.carousel-container::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.carousel {
+.carrossel {
   display: flex;
   gap: 30px;
   width: max-content;
@@ -243,3 +223,6 @@ align-self: center;
   line-height: 1.5;
 }
 
+.direita span{
+    font-weight: bolder;
+}

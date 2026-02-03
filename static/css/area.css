@@ -223,3 +223,12 @@ img.listras{
     flex-direction: column;
     gap: 20px;
 }
+
+.link2{
+    display: flex;
+    align-self: flex-end;
+    margin-left: 290px;
+    color: #895FBF;
+    font-weight: 600;
+    text-decoration: none;
+}

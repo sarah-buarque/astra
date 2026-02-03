@@ -89,7 +89,7 @@ def detalhesprojeto():
 
 @app.route('/visualizarprojetos')
 def visualizarprojetos():
-    return render_template("visualizarprojetos.html")
+    return render_template("visualizarprojetos.html")    
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
