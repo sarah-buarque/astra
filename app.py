@@ -71,6 +71,22 @@ def editarorientador():
 def areaaluno():
     return render_template("areaaluno.html")
 
+@app.route('/areaservidor')
+def areaservidor():
+    return render_template("areaservidor.html")
+
+@app.route('/editarprojeto')
+def editarprojeto():
+    return render_template("editarprojeto.html")
+
+@app.route('/criarprojeto')
+def criarprojeto():
+    return render_template("criarprojeto.html")
+
+@app.route('/detalhesprojeto')
+def detalhesprojeto():
+    return render_template("detalhesprojeto.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
 

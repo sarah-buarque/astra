@@ -1,0 +1,77 @@
+header.header{
+    background-color: #F0F1FF;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+  }
+
+.projeto-form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+  }
+  
+.projeto-form input,
+.projeto-form select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: black;
+  }
+  
+  
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+.btn-save {
+    background: #f4b428;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+.btn-delete {
+    background: #e53935;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.flex {
+    display: flex;
+    gap: 100px;
+  }
+  
+.flex .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.btn-create {
+    background: #f4b428;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }

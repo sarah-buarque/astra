@@ -1,0 +1,82 @@
+{% extends "base2.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/editarprojeto.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="center-content">
+
+    <form class="projeto-form">
+        <div class="flex">
+            <div class="field">
+                <label>Título: </label>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <label>Edital:</label>
+                <input type="text">
+            </div>
+        </div>
+    
+        <div class="flex">
+            <div class="field">
+                <label>Nome do Projeto: </label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Anexar Imagem</label>
+                <input type="file">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="field">
+                <label>Nome do Coorientador: </label>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <label>Campus: </label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="field">
+                <label>Quantidade de vagas</label>
+                <input type="number">
+            </div>
+
+            <div class="field">
+                <label>Descrição: </label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="field">
+                <label>Data do Projeto: </label>
+                <input type="date">
+            </div>
+
+            <div class="field">
+                <label>Tipo do Projeto</label>
+                <select>
+                    <option>Ensino</option>
+                    <option>Extensão</option>
+                    <option>Pesquisa</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="btn-create">Criar Projeto</button>
+        </div>  
+       
+      </form>
+
+</div>
+{% endblock %}

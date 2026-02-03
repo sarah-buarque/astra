@@ -1,0 +1,56 @@
+{% extends "base2.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/detalhes.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="center-content">
+    
+    <div class="box-1">
+        <img src="{{url_for('static', filename='img/retangulo.svg')}}" class="picture">
+
+        <div class="dados">
+            <h2>Semeando Crônicas</h2>
+            <span class="borda">Projeto de Ensino</span>
+            <p>The importance of environmental preservation cannot be overstated. As our planet faces challenges such as climate change, pollution.</p>
+            <span class="linha"></span>
+
+            <h2>Dados da Vaga</h2>
+            <p>Coorientador: </p>
+            <p>Edital: </p>
+            <p>Data: </p>
+            <span class="linha"></span>
+
+            <h2>Localização: </h2>
+            <div class="location">
+                <img src="{{url_for('static', filename='img/location.svg')}}">
+                <p>Natal - Zona Norte</p>
+            </div>
+            <span class="linha"></span>
+        </div>
+    </div>
+
+    <div class="box-2">
+
+        <div class="descricao">
+            <h1>Descrição</h1>
+            <p>The importance of environmental preservation cannot be overstated. As our planet faces challenges such as climate change, pollution, and deforestation, it becomes increasingly vital for individuals and communities to take action. Preserving the environment ensures the survival of countless species and protects the delicate balance of ecosystems. By adopting sustainable practices, reducing waste, and supporting conservation efforts, we can contribute to a healthier planet for future generations. Each small action counts, whether it's recycling, planting trees, or advocating for environmentally friendly policies. The responsibility lies with all of us to safeguard our natural resources and foster a more sustainable world.</p>
+        </div>
+
+        <div class="eventos">
+            <h1>Eventos</h1>
+
+            <ul>
+                <li>Semente</li>
+                <li>Secitex</li>
+                <li>Secit</li>
+                <li>Mocitex</li>
+            </ul>
+        </div>
+    
+
+    </div>
+
+</div>
+{% endblock %}
