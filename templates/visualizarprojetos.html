@@ -1,0 +1,58 @@
+{% extends "base2.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/visualizarprojeto.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="search">
+        <label for="searchInput">
+            <img src="{{url_for('static', filename='img/Search2.svg')}}">
+        </label>
+        <input type="text" id="searchInput" placeholder="Todos os Projetos">
+    </div>
+
+
+    <div class="filtro">
+        <button class="btn-filtro" id="btnFiltro">
+            Todos os Projetos ▾
+        </button>
+
+        <div class="opcoes-filtro" id="opcoesFiltro">
+            <span onclick="selecionarFiltro('Todos os Projetos')">Todos os Projetos</span>
+            <span onclick="selecionarFiltro('Ensino')">Ensino</span>
+            <span onclick="selecionarFiltro('Pesquisa')">Pesquisa</span>
+            <span onclick="selecionarFiltro('Extensão')">Extensão</span>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+  const btn = document.getElementById("btnFiltro");
+  const opcoes = document.getElementById("opcoesFiltro");
+
+  btn.addEventListener("click", function (e) {
+    e.stopPropagation(); 
+
+    if (opcoes.style.display === "block") {
+      opcoes.style.display = "none";
+    } else {
+      opcoes.style.display = "block";
+    }
+  });
+
+  function selecionarFiltro(nomeFiltro) {
+    btn.innerText = nomeFiltro + " ▾";
+    opcoes.style.display = "none";
+  }
+
+  window.addEventListener("click", function () {
+    opcoes.style.display = "none";
+  });
+</script>
+
+{% endblock %}
