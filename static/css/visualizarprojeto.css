@@ -7,7 +7,6 @@
   margin: 0 auto;     
 }
 
-/* Barra de Pesquisa */
 .search {
   display: flex;
   align-items: center;
@@ -31,7 +30,6 @@
   height: 20px;
 }
 
-/* Botão do Filtro */
 .filtro {
   position: relative;
   align-self: flex-start; 
@@ -71,4 +69,32 @@
 
 .opcoes-filtro span:hover {
   background-color: #f0f0f0;
+}
+
+.cards{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloco{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  padding: 100px 0;
+  height: 200px;
+}
+
+.bloco span{
+    text-align: center;
+    padding: 5px 15px;
+    background: #FCE3AF;
+    border-radius: 10px;
+    width: 35%;
+}
+
+.flex{
+  display: flex;
 }
