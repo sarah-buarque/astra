@@ -3,7 +3,6 @@ header.header {
 }
 
 .center-content {
-    margin-top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -17,14 +16,14 @@ div.box-1 {
 }
 
 .picture{
-    width: 390px;
+    width: 340px;
 }
 
 .dados {
     display: flex;
     flex-direction: column;
     width: 300px;
-    gap: 20px;
+    gap: 15px;
 }
 
 span.borda {
@@ -50,14 +49,26 @@ span.linha {
 }
 
 .box-2{
+    width: 740px;
     display: flex;
     color: black;
-    gap: 150px;
+    gap: 40px;
 }
 
 .descricao{
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 400px;
+    margin-top: 20px;
+    
+}
+
+.descricao p{
+    color: 868181;
+    font-size: 16px;
 }
   
+.descricao ul{
+    margin-left: 40px;
+    margin-top: 20px;
+}

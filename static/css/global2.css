@@ -84,3 +84,24 @@ body{
   width: 100%;
   background: white;
 }
+
+input{
+  background: #EDE8E8;
+  padding: 8px;
+  border: none;
+  width: 100%;
+  outline: none;
+  border-radius: 20px;
+}
+
+.serach-box{
+  display: flex;
+}
+
+.search-btn{
+  width: 20px;
+  background: #8A7EBE;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+}
