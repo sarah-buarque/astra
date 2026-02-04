@@ -7,7 +7,6 @@
   margin: 0 auto;     
 }
 
-/* Barra de Pesquisa */
 .search {
   display: flex;
   align-items: center;
@@ -31,7 +30,6 @@
   height: 20px;
 }
 
-/* Botão do Filtro */
 .filtro {
   position: relative;
   align-self: flex-start; 
@@ -44,6 +42,7 @@
   padding: 8px 16px;
   cursor: pointer;
   font-size: 14px;
+  margin-top: 20px;
 }
 
 
@@ -71,4 +70,41 @@
 
 .opcoes-filtro span:hover {
   background-color: #f0f0f0;
+}
+
+.cards{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.bloco{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  height: 200px;
+  border: #B9B9B9 1px solid;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.bloco span{
+    text-align: center;
+    background: #FCE3AF;
+    border-radius: 10px;
+    width: 35%;
+}
+
+.flex{
+  display: flex;
+  gap: 10px;
+}
+
+.bloco a{
+  text-decoration: none;
+  color: inherit; 
 }

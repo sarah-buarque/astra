@@ -2,7 +2,7 @@
 
 {% block styles %}
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
 {% endblock %}
 
 {% block content %}
@@ -39,9 +39,9 @@
 
 <section class="bg-light">
   <section class="projetos">
-    <h2 class="center">Conheça os projetos</h2>
-    <div class="carousel-container">
-      <div class="carousel">
+    <h2 class="center">Conheça projetos</h2>
+    <div class="projetos-container">
+      <div class="carrossel">
         <div class="projeto-card">
           <img src="{{url_for('static', filename='img/Nuarte.svg')}}" alt="Nuarte">
           <div class="overlay">
@@ -54,7 +54,7 @@
           <img src="{{url_for('static', filename='img/SemeandoCronicas.svg')}}" alt="Semeando Crônicas">
           <div class="overlay">
             <h3>Semeando Crônicas</h3>
-            <p>Estou trabalhando em um projeto de arte com reciclagem! Vai ser uma instalação cheia de esculturas feitas com materiais.</p>
+            <p>Estou trabalhando em uma crônica sobre reciclagem! Vai ser uma história cheia de reviravoltas e aventuras.</p>
             <a href="#">Saiba mais</a>
           </div>
         </div>
@@ -62,7 +62,7 @@
           <img src="{{url_for('static', filename='img/ADA.svg')}}" alt="ADA">
           <div class="overlay">
             <h3>ADA</h3>
-            <p>Estou trabalhando em um projeto de arte com reciclagem! Vai ser uma instalação cheia de esculturas feitas com materiais.</p>
+            <p>Estou trabalhando em alcançar mulheres interessadas em programação!</p>
             <a href="#">Saiba mais</a>
           </div>
         </div>
@@ -73,13 +73,13 @@
 
 <section class="lavanda">
   <h1>Conheça mais sobre o ASTRA</h1>
-  <a href="#">Saiba mais</a>
+  <a href="/sobre">Saiba mais</a>
 </section>
 
 <section class="qas">
   <div class="esquerda">
     <h1>Perguntas frequentes</h1>
-    <p>Precisa de ajuda? Fale com um dos nossos especialistas?</p>
+    <p>Precisa de ajuda? Fale com um dos nossos especialistas!</p>
     <a href="#">Quero falar com um suporte</a>
   </div>
 
@@ -90,8 +90,7 @@
         <span class="icon">+</span>
       </summary>
       <p>
-        Accordion layout de um site é a estrutura visual e a organização
-        de todos os elementos...
+        Para participar de um projeto, o interessado deve acompanhar as oportunidades disponíveis na plataforma ou nos canais oficiais da instituição. Geralmente, é necessário se inscrever, atender aos requisitos do projeto e aguardar a seleção dos responsáveis.
       </p>
     </details>
 
@@ -100,7 +99,7 @@
         <span>Como ganhar uma bolsa no projeto?</span>
         <span class="icon">+</span>
       </summary>
-      <p>Conteúdo da resposta aqui.</p>
+      <p>A concessão de bolsas depende de editais específicos, que definem critérios como desempenho acadêmico, disponibilidade e perfil do candidato. É importante acompanhar os editais abertos e cumprir todas as etapas do processo seletivo.</p>
     </details>
 
     <details>
@@ -108,7 +107,7 @@
         <span>Como submeter um projeto?</span>
         <span class="icon">+</span>
       </summary>
-      <p>Conteúdo da resposta aqui.</p>
+      <p>A submissão de um projeto normalmente é feita por meio de um formulário ou sistema oficial, onde o responsável deve informar os objetivos, a equipe envolvida, o cronograma e outros dados relevantes. O projeto passa por avaliação antes de ser aprovado.</p>
     </details>
 
     <details>
@@ -116,7 +115,7 @@
         <span>Quem pode participar?</span>
         <span class="icon">+</span>
       </summary>
-      <p>Conteúdo da resposta aqui.</p>
+      <p>Podem participar estudantes, professores ou membros da comunidade acadêmica, conforme as regras de cada projeto ou edital. Os critérios de elegibilidade variam de acordo com a iniciativa.</p>
     </details>
 
     <details>
@@ -124,7 +123,7 @@
         <span>Onde ver os editais?</span>
         <span class="icon">+</span>
       </summary>
-      <p>Conteúdo da resposta aqui.</p>
+      <p>Os editais podem ser consultados nos canais oficiais da instituição, como o site institucional, a plataforma do projeto ou os murais acadêmicos. Recomenda-se acompanhar regularmente para não perder prazos.</p>
     </details>
 
     <details>
@@ -132,7 +131,7 @@
         <span>Como ganhar certificado?</span>
         <span class="icon">+</span>
       </summary>
-      <p>Conteúdo da resposta aqui.</p>
+      <p>Os certificados geralmente são concedidos aos participantes que cumprem os requisitos do projeto, como carga horária mínima, participação ativa e entrega de atividades ou relatórios finais.</p>
     </details>
 
   </div>

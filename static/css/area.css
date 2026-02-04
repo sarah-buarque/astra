@@ -2,6 +2,10 @@ header.header{
     background-color: white;
 }
 
+body{
+    background-color: #F0F1FF;
+}
+
 .content{
     background-color: #F0F1FF;
 }
@@ -202,6 +206,7 @@ img.listras{
     padding: 40px;
     gap: 30px;
     max-width: 300px;
+    color: white;
 }
 
 .adicionar{
@@ -217,4 +222,13 @@ img.listras{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.link2{
+    display: flex;
+    align-self: flex-end;
+    margin-left: 290px;
+    color: #895FBF;
+    font-weight: 600;
+    text-decoration: none;
 }

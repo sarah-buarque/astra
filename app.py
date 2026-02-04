@@ -103,7 +103,7 @@ def detalhesprojeto():
 
 @app.route('/visualizarprojetos')
 def visualizarprojetos():
-    return render_template("visualizarprojetos.html")
+    return render_template("visualizarprojetos.html")    
 
 
 db.init_app(app)

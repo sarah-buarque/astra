@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: white;
+    background-color: transparent;
 }
 
 main {
@@ -67,6 +67,7 @@ main {
 }
 
 footer {
+    margin-top: 80px;
     display: flex; 
     justify-content: space-around; 
     flex-wrap: wrap;

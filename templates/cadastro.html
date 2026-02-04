@@ -9,19 +9,19 @@
     <div class="register-container">
         <h2>Cadastre-se</h2>
         <form method="POST">
-            <label>Nome Completo:</label>
+
+            <select name="perfil" class="perfil-select" required>
+                <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+                <option value="coordenador">Coordenador</option>
+            </select>
+
             <input type="text" name="nome" required placeholder="Digite seu nome completo">
-            <label>Data de Nascimento:</label>
-            <input type="text" name="usuario" placeholder="Ex: Usuário_3">
-            <label>Data de Nascimento:</label>
-            <input type="text" name="nascimento" placeholder="DD/MM/AA" required>
-            <label>Email:</label>
+            <input type="text" name="matricula" placeholder="Matrícula">
+            <input class="data" type="date" name="nascimento" placeholder="DD/MM/AA" required>
             <input type="email" name="email" required placeholder="Ex: Digite@seuemail.com">
-            <label>Telefone:</label>
-            <input type="text" name="telefone" placeholder="Ex: +55 (99) 99999-9999">
-            <label>Senha:</label>
-            <input type="password" name="senha" required minlength="8" placeholder="Digite sua senha">
-            <span class="senha-info">No mínimo 8 caracteres</span>
+            <input type="text" name="telefone" required minlength="11" required maxlength="11" placeholder="Ex: 84999999999">
+            <input type="password" name="senha" required minlength="8" placeholder="Digite sua senha (mín. 8 caracteres)">
             <button type="submit">Finalizar cadastro</button>
         </form>
     </div>

@@ -4,32 +4,39 @@ body {
     font-family: 'Poppins', sans-serif;
     background-image: url(../img/Cadastro.svg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .register-container {
     width: 400px;
-    margin: 40px auto;
-    background: white;
-    box-shadow: 0 0 20px #3334;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     border-radius: 30px;
     padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 h2 {
     margin-bottom: 25px;
     font-weight: 700;
     font-size: 2em;
-    color: #23233c;
+    color: white;
 }
 
 form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    align-items: center;
+    gap: 30px;
 }
 
 label {
@@ -37,18 +44,35 @@ label {
     color: #23233c;
 }
 
-input {
-    width: 100%;
+.perfil-select {
+    width: 40%;
     padding: 9px;
     font-size: 1em;
     border: 1px solid #cacaca;
     border-radius: 8px;
+    background: #ffffffcc;
+    display: flex;
+    align-self: flex-end;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
-.senha-info {
-    font-size: 0.85em;
-    color: #888;
-    margin-bottom: 12px;
+option{
+    color: black;
+}
+
+input {
+    width: 80%;
+    padding: 9px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input::placeholder,
+.perfil-select::placeholder {
+    color: #ddd;
 }
 
 button {
