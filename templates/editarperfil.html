@@ -16,39 +16,54 @@
     </div>
 
     <div class="profile-info">
-      <p>Matrícula: 278490556</p>
-      <p>Email: emilly@ifrn.edu.br</p>
-      <p>Currículo Lattes: emilly@ifrn.edu.br</p>
+      <p>Nome: {{ usuario.nome }}</p>
+      <p>Matrícula: {{ usuario.matricula }}</p>
+      <p>Email: {{ usuario.email }}r</p>
+      <p>Perfil: {{ usuario.perfil }}</p>
     </div>
   </div>
 
-  <form class="profile-form">
-    <label>Nome Social:</label>
-    <input type="text">
+  <form class="profile-form" method="POST">
+    <label>Nome:</label>
+    <input type="text" name="nome" class="form-control" value="{{ usuario.nome }}">
 
-    <label>Número de celular:</label>
-    <input type="text">
+    <label>Número de Telefone:</label>
+    <input type="text" name="telefone" class="form-control" value="{{ usuario.telefone }}">
 
     <div class="row">
       <div>
-        <label>Data de nascimento:</label>
-        <input type="date">
+        <label>Email:</label>
+        <input type="text" name="email" class="form-control" value="{{ usuario.email }}">
       </div>
 
       <div>
-        <label>Gênero:</label>
-        <select>
-          <option>Feminino</option>
-          <option>Masculino</option>
-          <option>Outro</option>
-          <option>Prefiro não dizer</option>
-        </select>
+        <label>Matrícula:</label>
+        <input type="text" name="matricula" class="form-control" value="{{ usuario.matricula }}">
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label>Data de nascimento</label>
+        <input type="date" name="nascimento" class="form-control" value="{{ usuario.nascimento }}">
+      </div>
+
+      <div>
+        <label>Senha:</label>
+        <input type="password" class="form-control">
       </div>
     </div>
 
     <div class="buttons">
-      <button type="submit" class="btn-save">Salvar alterações</button>
-      <button type="button" class="btn-delete">Excluir conta</button>
+      <form action="{{ url_for('editarperfil') }}" method="get">
+        <button type="submit" class="btn-save">Editar meus dados</button>
+      </form>
+      <form action="{{ url_for('excluir_usuario') }}" method="post" style="display:inline;">
+        <button type="submit" class="btn-delete"
+          onclick="return confirm('Tem certeza que deseja excluir sua conta? Esta ação não pode ser desfeita.')">
+          Excluir Conta
+        </button>
+      </form>
     </div>
   </form>
 

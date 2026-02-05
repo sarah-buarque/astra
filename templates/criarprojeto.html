@@ -7,76 +7,75 @@
 {% block content %}
 <div class="center-content">
 
-    <form class="projeto-form">
+    <form class="projeto-form" method="POST" enctype="multipart/form-data">
         <div class="flex">
             <div class="field">
                 <label>Título: </label>
-                <input type="text">
+                <input type="text" name="titulo" required>
             </div>
-            
+
             <div class="field">
                 <label>Edital:</label>
-                <input type="text">
+                <input type="text" name="edital">
             </div>
         </div>
-    
+
         <div class="flex">
             <div class="field">
                 <label>Nome do Projeto: </label>
-                <input type="text">
+                <input type="text" name="nome_projeto" required>
             </div>
 
             <div class="field">
                 <label>Anexar Imagem</label>
-                <input type="file">
+                <input type="file" name="imagem">
             </div>
         </div>
 
         <div class="flex">
             <div class="field">
-                <label>Nome do Coorientador: </label>
-                <input type="text">
+                <label>Nome do Coordenador: </label>
+                <input type="text" name="coordenador" required>
             </div>
 
             <div class="field">
                 <label>Campus: </label>
-                <input type="text">
+                <input type="text" name="campus" required>
             </div>
         </div>
 
         <div class="flex">
             <div class="field">
                 <label>Quantidade de vagas</label>
-                <input type="number">
+                <input type="number" name="vagas">
             </div>
 
             <div class="field">
                 <label>Descrição: </label>
-                <input type="text">
+                <input type="text" name="descricao" required>
             </div>
         </div>
 
         <div class="flex">
             <div class="field">
                 <label>Data do Projeto: </label>
-                <input type="date">
+                <input type="date" name="data_projeto" required>
             </div>
 
             <div class="field">
                 <label>Tipo do Projeto</label>
-                <select>
-                    <option>Ensino</option>
-                    <option>Extensão</option>
-                    <option>Pesquisa</option>
+                <select name="tipo_projeto" required>
+                    <option value="Ensino">Ensino</option>
+                    <option value="Extensão">Extensão</option>
+                    <option value="Pesquisa">Pesquisa</option>
                 </select>
             </div>
         </div>
 
         <div class="buttons">
             <button type="submit" class="btn-create">Criar Projeto</button>
-        </div>  
-       
-      </form>
+        </div>
+    </form>
 
 </div>
 {% endblock %}

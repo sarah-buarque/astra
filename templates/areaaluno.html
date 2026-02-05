@@ -5,62 +5,38 @@
 {% endblock %}
 
 {% block content %}
-
 <div class="center-cont">
-
   <div class="box-1">
     <div class="profile">
-      <div class="avatar">
-        <img src="{{ url_for('static', filename='img/user.svg') }}">
-      </div>
-
+      <div class="avatar"> <img src="{{ url_for('static', filename='img/user.svg') }}"> </div>
       <div class="informacoes">
-        <p>Nome: Yasmin Vitoriano</p>
-        <p>Matrícula: 20231041110030</p>
-        <p>Email: yasmin@escolar.ifrn.edu.br</p>
-        <p>Currículo lattes: </p>
-      </div>  
-
-      <a href="/editarperfil" class="link">Editar Perfil</a>
+        <p>Nome: {{ usuario.nome }}</p>
+        <p>Matrícula: {{ usuario.matricula }}</p>
+        <p>Email: {{ usuario.email }}r</p>
+        <p>Perfil: {{ usuario.perfil }}</p>
+      </div> <a href="/editarperfil" class="link">Editar Perfil</a>
     </div>
-
     <div class="notificacoes">
       <div class="top">
-        <h3>Minhas pendências</h3>
-        <img src="{{ url_for('static', filename='img/Menu.svg') }}" class="listras">
+        <h3>Minhas pendências</h3> <img src="{{ url_for('static', filename='img/Menu.svg') }}" class="listras">
       </div>
-
       <div class="mensagens">
         <p class="mensagem-1"><span class="numero">1</span> <b>Mensagens</b> não lidas</p>
         <p class="mensagem-2"><span class="numero">2</span> <b>Avaliação</b> aguardando avaliação</p>
       </div>
     </div>
   </div>
-
   <div class="box-2">
-    <div class="projetos">
-      <h1>Meus Projetos</h1>
-
+    <div class="coluna">
       <div class="projeto-1">
-        <img src="{{ url_for('static', filename='img/SemeandoCronicas.svg') }}">
-        <div class="proj-texto">
-          <h2>Semeando Crônicas</h2>
-          <p>Campus Natal Zona-Norte</p>
-          <span>Projeto de Ensino</span>
-        </div>
-      </div>
-
-      <div class="projeto-2">
-        <img src="{{ url_for('static', filename='img/ADA.svg') }}">
-        <div class="proj-texto">
-          <h2>ADA</h2>
-          <p>Campus Natal Zona-Norte</p>
-          <span>Projeto de Extensão</span>
-        </div>
-      </div>
-
-    </div>
-
+              <img src="{{ url_for('static', filename='img/SemeandoCronicas.svg') }}">
+              <div class="proj-texto">
+                <h2>Semeando Crônicas</h2>
+                <p>Campus Natal Zona-Norte</p>
+                <span>Projeto de Ensino</span>
+              </div>
+              <a href="/editarprojeto" class="link2">Editar</a>
+            </div>
     <div class="bemvindo">
       <h1>Bem Vindo!</h1>
       <p>Aqui você pode acompanhar projetos, se inscrever em atividades e ficar por dentro das novidades!</p>
@@ -70,8 +46,4 @@
       <p>atualize o seu perfil!</p>
     </div>
   </div>
-
-</div>
-
-    
-{% endblock %}
+</div> {% endblock %}

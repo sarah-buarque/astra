@@ -21,7 +21,7 @@
     </div>
 
     <button class="action-btn">
-      <a href="/"><img src="{{url_for('static', filename='img/Logout.png')}}" class="icon2"></a>
+      <a href="{{ url_for('home') }}"><img src="{{url_for('static', filename='img/Logout.png')}}" class="icon2"></a>
     </button>
   </div>
 </header>
@@ -32,7 +32,7 @@
     <h1>ASTRA</h1>
 
     <nav>
-      <a href="/areaaluno"><img src="{{url_for('static', filename='img/home.svg')}}" class="icon">Início</a>
+      <a href=""><img src="{{url_for('static', filename='img/home.svg')}}" class="icon">Início</a>
       <a href="/visualizarprojetos"><img src="{{url_for('static', filename='img/chart.svg')}}" class="icon">Projetos</a>
       <a href="#"><img src="{{url_for('static', filename='img/nuvem.svg')}}" class="icon">Central de serviços</a>
       <a href="#"><img src="{{url_for('static', filename='img/envelope.svg')}}" class="icon">Mensagens</a>
