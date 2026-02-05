@@ -256,22 +256,16 @@ def editarprojeto(projeto_id):
 @app.route('/excluirprojeto/<int:projeto_id>', methods=['POST'])
 @login_required
 def excluirprojeto(projeto_id):
-    try:
-        projeto = Projeto.query.get(projeto_id)
-        if not projeto:
-            flash('Projeto não encontrado.', 'error')
-            return redirect(url_for('areaservidor'))
+    projeto = Projeto.query.filter_by(
+        id=projeto_id,
+        coordenador_id=current_user.id
+    ).first_or_404()
 
-       
-        db.session.delete(projeto)
-        db.session.commit()  
-        flash('Projeto excluído com sucesso!', 'success')
-        return redirect(url_for('areaservidor'))
-    
-    except Exception as e:
-        db.session.rollback() 
-        flash(f'Erro ao excluir o projeto: {str(e)}', 'error')
-        return redirect(url_for('areaservidor'))
+    db.session.delete(projeto)
+    db.session.commit()
+
+    flash('Projeto excluído com sucesso!', 'success')
+    return redirect(url_for('areaservidor'))
 
 @app.route('/detalhesprojeto')
 def detalhesprojeto():
