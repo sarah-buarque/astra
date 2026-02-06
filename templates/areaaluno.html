@@ -12,7 +12,7 @@
       <div class="informacoes">
         <p>Nome: {{ usuario.nome }}</p>
         <p>Matrícula: {{ usuario.matricula }}</p>
-        <p>Email: {{ usuario.email }}r</p>
+        <p>Email: {{ usuario.email }}</p>
         <p>Perfil: {{ usuario.perfil }}</p>
       </div> <a href="/editarperfil" class="link">Editar Perfil</a>
     </div>
@@ -28,22 +28,25 @@
   </div>
   <div class="box-2">
     <div class="coluna">
-      <div class="projeto-1">
-              <img src="{{ url_for('static', filename='img/SemeandoCronicas.svg') }}">
-              <div class="proj-texto">
-                <h2>Semeando Crônicas</h2>
-                <p>Campus Natal Zona-Norte</p>
-                <span>Projeto de Ensino</span>
-              </div>
-              <a href="/editarprojeto" class="link2">Editar</a>
-            </div>
-    <div class="bemvindo">
-      <h1>Bem Vindo!</h1>
-      <p>Aqui você pode acompanhar projetos, se inscrever em atividades e ficar por dentro das novidades!</p>
-      <p>Veja os projetos disponíveis</p>
-      <p>Faça sua inscrição</p>
-      <p>Acompanhe suas atividades </p>
-      <p>atualize o seu perfil!</p>
-    </div>
-  </div>
-</div> {% endblock %}
+      <h1>Meus Projetos</h1>
+      <div class="projetos">
+        <div class="projeto-1">
+          <img src="{{ url_for('static', filename='img/SemeandoCronicas.svg') }}">
+          <div class="proj-texto">
+            <h2>Semeando Crônicas</h2>
+            <p>Campus Natal Zona-Norte</p>
+            <span>Projeto de Ensino</span>
+          </div>
+          
+      
+      </div>
+        <div class="bemvindo">
+          <h1>Bem Vindo!</h1>
+          <p>Aqui você pode acompanhar projetos, se inscrever em atividades e ficar por dentro das novidades!</p>
+          <p>Veja os projetos disponíveis</p>
+          <p>Faça sua inscrição</p>
+          <p>Acompanhe suas atividades </p>
+          <p>atualize o seu perfil!</p>
+        </div>
+      </div>
+    </div> {% endblock %}

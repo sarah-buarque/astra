@@ -191,6 +191,7 @@ img.listras{
 .projeto-1 .proj-texto span {
     background-color: #F9CE72;
     color: #7E6A00;
+    width: fit-content;
 }
 
 .projeto-2 .proj-texto span {
@@ -227,8 +228,16 @@ img.listras{
 .link2{
     display: flex;
     align-self: flex-end;
-    margin-left: 290px;
     color: #895FBF;
     font-weight: 600;
     text-decoration: none;
+}
+
+span.def-width{
+    width: fit-content;
+}
+
+.projeto-1{
+    display: flex;
+    justify-content: space-between;
 }

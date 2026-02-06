@@ -226,3 +226,7 @@ align-self: center;
 .direita span{
     font-weight: bolder;
 }
+
+.lavanda .branco{
+  color: white;
+}
